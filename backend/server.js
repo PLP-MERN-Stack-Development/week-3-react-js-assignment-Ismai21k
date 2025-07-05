@@ -26,7 +26,7 @@ const PORT = 5000;
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin:'http://localhost:5173',// this is the frontend url
+    origin: ['http://localhost:5173','https://delicate-kangaroo-48e72f.netlify.app/'],// this is the frontend url
 }))
 
 app.get('/', (req, res) => {
